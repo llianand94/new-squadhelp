@@ -1,6 +1,5 @@
 import ACTION from '../actions/actionTypes';
 
-
 const initialState = {
   isFetching: true,
   contestData: null,

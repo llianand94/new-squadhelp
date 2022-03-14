@@ -36,7 +36,7 @@ const SelectInput = ({
     if (!initialValue && optionsArray) {
       setFieldValue(field.name, valueArray ? valueArray[0] : optionsArray[0]);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -57,7 +57,7 @@ const SelectInputWrapper = ({
   ...rest
 }) => (
   <Field {...rest}>
-    {(fieldProps) => (
+    {fieldProps => (
       <>
         <SelectInput
           {...fieldProps}
@@ -66,7 +66,11 @@ const SelectInputWrapper = ({
           optionsArray={optionsArray}
           valueArray={valueArray}
         />
-        <ErrorMessage name={fieldProps.field.name} component="span" className={classes.warning} />
+        <ErrorMessage
+          name={fieldProps.field.name}
+          component='span'
+          className={classes.warning}
+        />
       </>
     )}
   </Field>
