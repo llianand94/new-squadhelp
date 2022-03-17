@@ -83,7 +83,9 @@ class App extends Component {
             component={PrivateHoc(ContestPage)}
           />
           <Route exact path='/account' component={PrivateHoc(UserProfile)} />
-          <Route component={NotFound} />
+          <Route 
+            exact
+            path='*' component={NotFound} />
         </Switch>
         <ChatContainer />
       </Router>
