@@ -2,6 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './DialogBox.module.sass';
 import CONSTANTS from '../../../../constants';
+import { includes } from 'lodash';
+
 
 const DialogBox = props => {
   const {
@@ -15,6 +17,7 @@ const DialogBox = props => {
     chatMode,
     interlocutor,
   } = props;
+ 
   const {
     favoriteList,
     participants,
@@ -25,6 +28,11 @@ const DialogBox = props => {
   } = chatPreview;
   const isFavorite = favoriteList[participants.indexOf(userId)];
   const isBlocked = blackList[participants.indexOf(userId)];
+
+  if (!interlocutor) {
+    return null;
+  }
+
   return (
     <div
       className={styles.previewChatBox}
