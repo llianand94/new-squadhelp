@@ -1,0 +1,62 @@
+@import '../../../common/styles/templates'
+
+.emailIcon
+  padding: 0 15px
+  border-right: 1px solid #ebebeb
+  cursor: pointer
+
+.userInfo
+  @extend %flexAlignCenter
+  justify-content: center
+  padding: 0 15px
+  border-right: 1px solid #ebebeb
+
+
+  &:hover
+    ul
+      display: block
+      position: absolute
+      top: 60px
+
+  ul
+    border: 1px solid #eee
+    z-index: 500
+    padding: 5px 0
+    list-style: none
+    background: white
+    width: 180px
+    display: none
+
+    li
+      text-align: left
+      
+
+      &:hover
+        background: #f9fafb
+
+      span
+        display: inline-block
+        padding: 5px 15px
+        border: none
+        color: #333
+        font-size: 16px
+
+  img
+    width: 20px
+    height: 20px
+    border-radius: 10px
+
+span
+  padding: 0
+  margin-left: 5px
+  border: none
+  color: #718888
+  font-weight: 400
+  font-size: 16px
+  cursor: pointer
+
+.btn
+  padding: 0 15px
+  font-size: 14px
+  border-right: 1px solid #ebebeb
+
