@@ -30,6 +30,25 @@ const CONSTANTS = {
   CREATE_NEW_CATALOG_AND_ADD_CHAT: 'CREATE_NEW_CATALOG_AND_ADD_CHAT',
   USER_INFO_MODE: 'USER_INFO_MODE',
   CASHOUT_MODE: 'CASHOUT_MODE',
+  HEADER_LOGIN_BUTTONS:[
+      {
+        "path": "/dashboard",
+        "text": "View Dashboard"
+      },
+      {
+        "path": "/account",
+        "text": "My Account"
+      },
+      {
+        "path": "http:/www.google.com",
+        "text": "Messages"
+      },
+      {
+        "path": "http:/www.google.com",
+        "text": "Affiliate Dashboard"
+      }
+    ]
+  ,
   HEADER_ANIMATION_TEXT: [
     'a Company',
     'a Brand',
