@@ -1,0 +1,398 @@
+@import './variables'
+
+.container
+  width: 100%
+  padding-left: $padding-value
+  padding-right: $padding-value
+  margin-left: auto
+  margin-right: auto
+
+.row
+  display: flex
+  flex-wrap: wrap
+  margin-left: $padding-value*-1
+  margin-right: $padding-value*-1
+
+  > *
+    padding-left: $padding-value
+    padding-right: $padding-value
+
+.col_1
+  $size: 100% / $count-column * 1
+  flex-basis: $size
+  max-width: $size
+
+.col_2
+  $size: (100% / $count-column) * 2
+  flex-basis: $size
+  max-width: $size
+
+.col_3
+  $size: (100% / $count-column) * 3
+  flex-basis: $size
+  max-width: $size
+
+.col_4
+  $size: (100% / ($count-column) * 4)
+  flex-basis: $size
+  max-width: $size
+
+.col_5
+  $size: (100% / $count-column * 5)
+  flex-basis: $size
+  max-width: $size
+
+.col_6
+  $size: (100% / $count-column * 6)
+  flex-basis: $size
+  max-width: $size
+
+.col_7
+  $size: (100% / $count-column * 7)
+  flex-basis: $size
+  max-width: $size
+
+.col_8
+  $size: (100% / $count-column * 8)
+  flex-basis: $size
+  max-width: $size
+
+.col_9
+  $size: (100% / $count-column * 9)
+  flex-basis: $size
+  max-width: $size
+
+.col_10
+  $size: (100% / $count-column * 10)
+  flex-basis: $size
+  max-width: $size
+
+.col_11
+  $size: (100% / $count-column * 11)
+  flex-basis: $size
+  max-width: $size
+
+.col_12
+  $size: (100% / $count-column * 12)
+  flex-basis: $size
+  max-width: $size
+
+@media screen and (min-width: 576px)
+  .container
+    width: 540px
+
+  .col_sm_1
+    $size: (100% / $count-column * 1)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_2
+    $size: (100% / $count-column * 2)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_3
+    $size: (100% / $count-column * 3)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_4
+    $size: (100% / $count-column * 4)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_5
+    $size: (100% / $count-column * 5)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_6
+    $size: (100% / $count-column * 6)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_7
+    $size: (100% / $count-column * 7)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_8
+    $size: (100% / $count-column * 8)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_9
+    $size: (100% / $count-column * 9)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_10
+    $size: (100% / $count-column * 10)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_11
+    $size: (100% / $count-column * 11)
+    flex-basis: $size
+    max-width: $size
+
+  .col_sm_12
+    $size: (100% / $count-column * 12)
+    flex-basis: $size
+    max-width: $size
+
+@media screen and (min-width: 768px)
+  .container
+    width: 720px
+
+  .col_md_1
+    $size: (100% / $count-column * 1)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_2
+    $size: (100% / $count-column * 2)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_3
+    $size: (100% / $count-column * 3)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_4
+    $size: (100% / $count-column * 4)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_5
+    $size: (100% / $count-column * 5)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_6
+    $size: (100% / $count-column * 6)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_7
+    $size: (100% / $count-column * 7)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_8
+    $size: (100% / $count-column * 8)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_9
+    $size: (100% / $count-column * 9)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_10
+    $size: (100% / $count-column * 10)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_11
+    $size: (100% / $count-column * 11)
+    flex-basis: $size
+    max-width: $size
+
+  .col_md_12
+    $size: (100% / $count-column * 12)
+    flex-basis: $size
+    max-width: $size
+
+@media screen and (min-width: 992px)
+  .container
+    width: 960px
+
+  .col_lg_1
+    $size: (100% / $count-column * 1)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_2
+    $size: (100% / $count-column * 2)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_3
+    $size: (100% / $count-column * 3)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_4
+    $size: (100% / $count-column * 4)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_5
+    $size: (100% / $count-column * 5)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_6
+    $size: (100% / $count-column * 6)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_7
+    $size: (100% / $count-column * 7)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_8
+    $size: (100% / $count-column * 8)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_9
+    $size: (100% / $count-column * 9)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_10
+    $size: (100% / $count-column * 10)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_11
+    $size: (100% / $count-column * 11)
+    flex-basis: $size
+    max-width: $size
+
+  .col_lg_12
+    $size: (100% / $count-column * 12)
+    flex-basis: $size
+    max-width: $size
+
+@media screen and (min-width: 1200px)
+  .container
+    width: 1140px
+
+  .col_xl_1
+    $size: (100% / $count-column * 1)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_2
+    $size: (100% / $count-column * 2)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_3
+    $size: (100% / $count-column * 3)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_4
+    $size: (100% / $count-column * 4)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_5
+    $size: (100% / $count-column * 5)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_6
+    $size: (100% / $count-column * 6)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_7
+    $size: (100% / $count-column * 7)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_8
+    $size: (100% / $count-column * 8)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_9
+    $size: (100% / $count-column * 9)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_10
+    $size: (100% / $count-column * 10)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_11
+    $size: (100% / $count-column * 11)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xl_12
+    $size: (100% / $count-column * 12)
+    flex-basis: $size
+    max-width: $size
+
+@media screen and (min-width: 1400px)
+  .container
+    width: 1320px
+
+  .col_xxl_1
+    $size: (100% / $count-column * 1)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_2
+    $size: (100% / $count-column * 2)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_3
+    $size: (100% / $count-column * 3)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_4
+    $size: (100% / $count-column * 4)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_5
+    $size: (100% / $count-column * 5)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_6
+    $size: (100% / $count-column * 6)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_7
+    $size: (100% / $count-column * 7)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_8
+    $size: (100% / $count-column * 8)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_9
+    $size: (100% / $count-column * 9)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_10
+    $size: (100% / $count-column * 10)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_11
+    $size: (100% / $count-column * 11)
+    flex-basis: $size
+    max-width: $size
+
+  .col_xxl_12
+    $size: (100% / $count-column * 12)
+    flex-basis: $size
+    max-width: $size

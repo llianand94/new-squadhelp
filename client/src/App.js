@@ -12,6 +12,7 @@ import NotFound from './components/NotFound/NotFound';
 import Home from './pages/Home/Home';
 import OnlyNotAuthorizedUserHoc from './components/OnlyNotAuthorizedUserHoc/OnlyNotAuthorizedUserHoc';
 import ContestPage from './pages/ContestPage/ContestPage';
+import HowItWork from './pages/HowItWork/HowItWork';
 import UserProfile from './pages/UserProfile/UserProfile';
 import 'react-toastify/dist/ReactToastify.css';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
@@ -83,6 +84,7 @@ class App extends Component {
             component={PrivateHoc(ContestPage)}
           />
           <Route exact path='/account' component={PrivateHoc(UserProfile)} />
+          <Route exact path='/howItWork' component={HowItWork}/>
           <Route 
             exact
             path='*' component={NotFound} />
